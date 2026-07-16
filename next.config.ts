@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const withNextIntl = createNextIntlPlugin();
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // 💡 Explicitly declare the empty turbopack object so next-intl can securely inject its build aliases
+  turbopack: {}, 
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

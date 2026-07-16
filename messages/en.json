@@ -1,0 +1,47 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "restaurants": "Restaurants",
+    "menu": "Menu",
+    "more": "More"
+  },
+  "Hero": {
+    "title": "TASTE OUR DELICIOUS",
+    "subtitle": "Chicken Burger Only at Caylo's!"
+  },
+  "Delivery": {
+    "title": "HAVE IT YOUR WAY",
+    "menuTitle": "OUR MENUS",
+    "menuDesc": "Our menus are carefully selected to best suit your needs. We take pride in serving ingredients of the highest quality to ensure that every meal meets our high standards of quality and ethical practices.",
+    "deliveryTitle": "ORDER DELIVERY",
+    "deliveryDesc": "Enjoy the convenience of our delivery service right to your doorstep. Ordering from us is easy; simply choose your favorite dishes from our menu, place your order online, and relax while we take care of the rest 😉"
+  },
+  "Testimonials": {
+    "title": "Our Testimonials",
+    "quote": "Great Food, Excellent Service & Spotless Cleanliness",
+    "body": "Very good food, Good service and nice staff. The room was nice and clean, the tables and the toilet were clean. Will go here again and recommend to try.",
+    "author": "Emil Åleskjær"
+  },
+  "Franchise": {
+    "title": "Join the Caylo's Family",
+    "subtitle": "Franchise Opportunities Available",
+    "desc": "Become a part of Caylo's, Norway's top burger and fried chicken brand. With our proven model and full support, you can bring our exceptional taste to your community. Join us today and start your journey to success with Caylo's!",
+    "cta": "APPLY TODAY"
+  },
+  "Contact": {
+    "heading": "Let us know about your experience in our restaurants !",
+    "subheading": "Do you have any questions? Or do you have any ideas? Let us know so we can improve!",
+    "nameLabel": "Your Name *",
+    "emailLabel": "Email *",
+    "subjectLabel": "Subject *",
+    "messageLabel": "Your Message *",
+    "captchaLabel": "Answer the security question *",
+    "submit": "Submit"
+  },
+  "Footer": {
+    "text": "At Caylo's, we're passionate about serving up the finest chicken burgers. Now, you can bring this taste sensation to your own community by becoming a Caylo's franchisee.",
+    "menuHeading": "Menu",
+    "contactHeading": "Contact for Franchisee",
+    "rights": "@ 2026 Caylo's. All Rights Reserved."
+  }
+}

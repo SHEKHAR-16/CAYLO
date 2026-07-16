@@ -1,26 +1,29 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* This sets up your special brand colors so we can use them in our components */
+@theme {
+  --color-caylo-red: #960808;
+  --color-caylo-yellow: #FFC700;
+
+  
+  /* --- GOOGLE FONTS --- */
+  --font-barlow: var(--font-barlow), sans-serif;
+  --font-mulish: var(--font-mulish), sans-serif;
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-rubik: var(--font-rubik), sans-serif;
+  --font-lato: var(--font-lato), sans-serif;
+  --font-chewy: var(--font-chewy), sans-serif;
+
+  /* --- SYSTEM FONTS --- */
+  /* These don't need imports, just standard CSS fallbacks */
+  --font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-arial: Arial, Helvetica, sans-serif;
+  --font-verdana: Verdana, Geneva, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }

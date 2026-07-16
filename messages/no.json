@@ -1,0 +1,47 @@
+{
+  "Navigation": {
+    "home": "Hjem",
+    "restaurants": "Restauranter",
+    "menu": "Meny",
+    "more": "Mer"
+  },
+  "Hero": {
+    "title": "SMAK VÅR DEILIGE",
+    "subtitle": "Kyllingburger Bare hos Caylo's!"
+  },
+  "Delivery": {
+    "title": "GJØR DET PÅ DIN MÅTE",
+    "menuTitle": "VÅRE MENYER",
+    "menuDesc": "Våre menyer er nøye utvalgt for best å passe dine behov. Vi verdsetter råvarer av høyeste kvalitet for å sikre at hvert måltid oppfyller våre strenge krav til kvalitet.",
+    "deliveryTitle": "BESTILL LEVERING",
+    "deliveryDesc": "Nyt fordelene med vår leveringstjeneste rett på døren. Det er enkelt å bestille fra oss; velg dine favorittretter, legg inn din bestilling, og slapp av mens vi fikser resten 😉"
+  },
+  "Testimonials": {
+    "title": "Våre Omtaler",
+    "quote": "Fantastisk Mat, Utmerket Service & Spotless Renhold",
+    "body": "Veldig god mat, god service og hyggelig betjening. Lokalet var fint og rent. Kommer gjerne igjen og anbefaler å prøve.",
+    "author": "Emil Åleskjær"
+  },
+  "Franchise": {
+    "title": "Bli en del av Caylo's-familien",
+    "subtitle": "Franchise-muligheter tilgjengelig",
+    "desc": "Bli en del av Caylo's, Norges beste merkevare for burger og frityrstekt kylling. Med vår velprøvde modell og fulle støtte kan du bringe vår eksepsjonelle smak til ditt nærmiljø. Bli med oss i dag og start din reise til suksess med Caylo's!",
+    "cta": "SØK I DAG"
+  },
+  "Contact": {
+    "heading": "Fortell oss om din opplevelse i våre restauranter !",
+    "subheading": "Har du spørsmål? Eller har du noen idéer? Hør fra deg så vi kan bli bedre!",
+    "nameLabel": "Ditt Navn *",
+    "emailLabel": "E-post *",
+    "subjectLabel": "Emne *",
+    "messageLabel": "Din Melding *",
+    "captchaLabel": "Svar på sikkerhetsspørsmålet *",
+    "submit": "Send inn"
+  },
+  "Footer": {
+    "text": "Hos Caylo's brenner vi for å servere de beste kyllingburgerne. Nå kan du bringe denne smaksoperasjonen til ditt eget nærmiljø ved å bli en Caylo's-franchisetaker.",
+    "menuHeading": "Meny",
+    "contactHeading": "Kontakt for Franchisetakere",
+    "rights": "@ 2026 Caylo's. Alle rettigheter reservert."
+  }
+}
