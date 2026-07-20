@@ -1,7 +1,9 @@
-import Testimonials from "../../components/sections/Testimonials";
 import Hero from "../../components/sections/Hero"; 
 import SecondSection from "../../components/sections/SecondSection";
+import Testimonials from "@/components/sections/testimonials";
 import Franchise from "@/components/sections/Franchise";
+import ContactForm from "@/components/sections/contact-form";
+import Footer from "@/components/layout/Footer";
 export default function HomePage() {
   return (
     <main>
@@ -9,6 +11,8 @@ export default function HomePage() {
       <SecondSection />
       <Testimonials />
       <Franchise />
+      <ContactForm />
+      <Footer />
     </main>
   );
 }

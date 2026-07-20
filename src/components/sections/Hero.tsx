@@ -11,16 +11,17 @@ export default function Hero() {
       <div className="w-full h-full mx-auto max-w-7xl px-0 grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
         
         {/* 1. LEFT COLUMN: Text Content */}
-        <div className="relative -top-12 left-12  flex flex-col text-white space-y-2 max-w-[700px] z-10">
-          <span className="font-barlow text-[36px] md:text-[42px] font-semibold uppercase text-white [text-shadow:0px_0px_10px_rgb(0,0,0,0.65)] leading-tight">
+        {/* 💡 FIX: Removed the typo 'left' and added 'ml-6 md:ml-12' (margin-left) to push it to the right! */}
+        <div className="relative -top-12 ml-6 md:ml-12 flex flex-col text-white space-y-2 max-w-[700px] z-10">
+          <span className="block w-[570px] h-[45px] font-barlow text-[36px] md:text-[42px] font-semibold uppercase text-white [text-shadow:0px_0px_10px_rgb(0,0,0,0.65)] leading-[45px]">
             Taste Our Delicious
           </span>
          <h1 className="font-chewy font-medium text-[#FFA700] text-[45px] md:text-[68px] leading-[50px] md:leading-tight">
             <span className="whitespace-nowrap">Chicken Burger Only</span>
-            <span className="block -mt-4 md:-mt-8 text-[#FFA700]">at Caylo's!</span>
+            <span className="block -mt-2 md:-mt-4 text-[#FFA700]">at Caylo's!</span>
           </h1>
            {/* 💡 FIX: Added the explicit sans-serif fallback directly into the font class! */}
-  <p className="font-['Mulish',_sans-serif]  text-[15px] font-normal text-white leading-[1.8] pt-4">
+  <p className="font-['Mulish',_sans-serif] w-550 h-157.7 text-[15px] font-normal text-white leading-[1.8] pt-4">
     Although we are new to the market, we are already dedicated to providing <br className="hidden md:block" />
     unforgettable taste experiences with our selection of chicken dishes. At Caylo's, <br className="hidden md:block" />
     we are passionate about serving the highest quality chicken, made with the <br className="hidden md:block" />

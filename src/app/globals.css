@@ -13,6 +13,8 @@
   --font-rubik: var(--font-rubik), sans-serif;
   --font-lato: var(--font-lato), sans-serif;
   --font-chewy: var(--font-chewy), sans-serif;
+  --font-agbalumo: var(--font-agbalumo), sans-serif;
+  --font-roboto: var(--font-roboto), sans-serif;
 
   /* --- SYSTEM FONTS --- */
   /* These don't need imports, just standard CSS fallbacks */

@@ -2,8 +2,8 @@ import { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Navbar from '../components/layout/Navbar';
-import { Barlow_Condensed, Mulish, Poppins, Rubik, Lato, Chewy } from "next/font/google";
-
+import { Barlow_Condensed, Mulish, Poppins, Rubik, Lato, Chewy ,Agbalumo, Roboto} from "next/font/google";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 import './globals.css'; // Note: One extra level up now!
 
@@ -13,6 +13,18 @@ const barlow = Barlow_Condensed({
   variable: "--font-barlow" 
 });
 
+const agbalumo = Agbalumo({
+  weight: '400',
+  subsets: ['latin'],
+  variable: "--font-agbalumo",
+});
+
+const roboto = Roboto({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display:'swap',
+  variable: "--font-roboto",
+});
 const chewy = Chewy({ 
   subsets: ["latin"], 
   weight: "400", 
@@ -61,6 +73,8 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         ${rubik.variable} 
         ${lato.variable} 
         ${chewy.variable}
+        ${agbalumo.variable}
+        ${roboto.variable}
         antialiased
       `} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
@@ -68,6 +82,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           <main>{children}</main>
         
         </NextIntlClientProvider>
+                     
       </body>
     </html>
   );
