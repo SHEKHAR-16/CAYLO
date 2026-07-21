@@ -5,7 +5,7 @@ import Navbar from '../components/layout/Navbar';
 import { Barlow_Condensed, Mulish, Poppins, Rubik, Lato, Chewy ,Agbalumo, Roboto} from "next/font/google";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
-import './globals.css'; // Note: One extra level up now!
+import './globals.css'; 
 
 const barlow = Barlow_Condensed({ 
   subsets: ["latin"], 
@@ -61,7 +61,7 @@ interface LayoutProps {
 export default async function LocaleLayout({ children, params }: LayoutProps) {
   const { lang } = await params;
   
-  // Fetch messages mapped from src/i18n/request.ts setup
+ 
   const messages = await getMessages();
 
   return (

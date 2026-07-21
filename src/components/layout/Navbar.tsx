@@ -18,10 +18,10 @@ export default function Navbar() {
   return (
     <header className="w-full bg-[#960808] relative z-50">
       
-      {/* Container with justify-between */}
+      
       <div className="max-w-[1140px] w-full mx-auto py-[10px] px-4 xl:px-0 min-h-[79.61px] flex items-center justify-between">
         <div className="flex items-center gap-[170px]">
-        {/* 1. LEFT: Logo (Removed the wrapper div that was locking it to the nav) */}
+       
         <Link href={`/${lang}`} className="flex items-center">
           <Image
             src={logoImg}
@@ -32,7 +32,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* 2. MIDDLE: Navigation Links */}
+        
         <nav className="flex items-center text-white font-bold text-[16px]">
           
           <Link href={`/${lang}`} className="block p-[15px] text-[#FFA700]">
@@ -45,7 +45,7 @@ export default function Navbar() {
             {t("menu")}
           </Link>
           
-          {/* Dropdown Menu */}
+          
           <div className="relative group cursor-pointer">
             <span className="p-[15px] hover:text-[#FFC700] transition-colors flex items-center gap-1.5">
               {t("more")} 
@@ -72,7 +72,7 @@ export default function Navbar() {
         </nav>
         </div>
 
-        {/* 3. RIGHT: Language Button */}
+        
         <div className="flex items-center justify-between w-[90px] h-[38px] px-3 bg-white cursor-pointer duration-200 rounded-sm">
           <LangSwitcher />
         

@@ -9,7 +9,7 @@ export default function LangSwitcher() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  // 💡 FIX: Both variables now use the exact same camelCase spelling "pathSegments"
+  
   const pathSegments = pathname.split("/");
   const currentLang = pathSegments[1] === "no" ? "no" : "en";
 
@@ -20,12 +20,12 @@ export default function LangSwitcher() {
     setIsOpen(false);
   };
 
-  const folderPath = "/"; // Change to "/logos/" if your flags are in the logos folder
+  const folderPath = "/"; 
 
   return (
     <div className="relative inline-block text-left z-50">
       
-      {/* Active Flag Button */}
+      
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
@@ -43,7 +43,7 @@ export default function LangSwitcher() {
         <span className="text-white text-xs">▼</span>
       </button>
 
-      {/* Dropdown Options */}
+      
       {isOpen && (
         <div className="absolute right-0 mt-2 w-16 bg-white rounded shadow-lg border border-gray-200 overflow-hidden flex flex-col items-center py-1">
           
