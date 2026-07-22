@@ -6,6 +6,7 @@ import { Barlow_Condensed, Mulish, Poppins, Rubik, Lato, Chewy ,Agbalumo, Roboto
 import { FaAngleDoubleRight } from "react-icons/fa";
 
 import './globals.css'; 
+import Footer from '@/components/layout/Footer';
 
 const barlow = Barlow_Condensed({ 
   subsets: ["latin"], 
@@ -80,7 +81,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         <NextIntlClientProvider messages={messages}>
           <Navbar key={lang} />
           <main>{children}</main>
-        
+          <Footer />
         </NextIntlClientProvider>
                      
       </body>

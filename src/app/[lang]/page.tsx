@@ -3,7 +3,8 @@ import SecondSection from "../../components/sections/SecondSection";
 import Testimonials from "@/components/sections/testimonials";
 import Franchise from "@/components/sections/Franchise";
 import ContactForm from "@/components/sections/contact-form";
-import Footer from "@/components/layout/Footer";
+
+
 export default function HomePage() {
   return (
     <main>
@@ -12,7 +13,7 @@ export default function HomePage() {
       <Testimonials />
       <Franchise />
       <ContactForm />
-      <Footer />
+      
     </main>
   );
 }

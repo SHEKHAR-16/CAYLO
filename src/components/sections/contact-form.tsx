@@ -42,14 +42,14 @@ export default function ContactForm() {
         Let us know so we can improve!
       </p>
 
-      {/* THE FORM WRAPPER */}
+     
       <form onSubmit={handleSubmit} className="w-full max-w-[1120px] h-auto flex flex-col mt-[40px] p-[10px]">
         
-        {/* ROW 1: Name, Email, Subject */}
+       
         <div className="w-full flex flex-col md:flex-row justify-between w-full">
           
           <div className="flex flex-col w-full max-w-[359.98px]">
-            {/* 💡 Applied: block, font-bold, not-italic, break-words */}
+            
             <label className="block font-bold not-italic break-words font-['Lato',_sans-serif] text-[#000000] text-[16px] mb-[8px]">
               Your Name <span className="text-[#d63637]">*</span>
             </label>
@@ -81,7 +81,7 @@ export default function ContactForm() {
 
         </div>
 
-        {/* ROW 2: Your Message */}
+       
         <div className="w-full flex flex-col mt-[24px]">
           <label className="block font-bold not-italic break-words font-['Lato',_sans-serif] text-[#000000] text-[16px] mb-[8px]">
             Your Message <span className="text-[#d63637]">*</span>
@@ -91,13 +91,13 @@ export default function ContactForm() {
           ></textarea>
         </div>
 
-        {/* ROW 3: Security Question */}
+        
         <div className="w-full flex flex-col mt-[24px]">
           <label className="block font-bold not-italic break-words font-['Lato',_sans-serif] text-[#000000] text-[16px] mb-[8px]">
             Answer the security question <span className="text-[#d63637]">*</span>
           </label>
           <div className="flex items-center gap-2 font-['Lato',_sans-serif] text-[16px] text-black">
-            {/* 💡 Applied styling to the math equation text as well */}
+           
             <span className="block font-bold not-italic break-words">
               {mounted ? `${num1} + ${num2}` : ''}
             </span>
@@ -110,7 +110,7 @@ export default function ContactForm() {
           </div>
         </div>
 
-        {/* ROW 4: Submit Button */}
+       
         <div className="w-full mt-[24px]">
           <button type="submit" className="w-[170px] h-[41px] bg-[#bf2130] hover:bg-[#8f1515] transition-colors text-white font-['Lato',_sans-serif] text-[16px] px-[15px] rounded-[10px] flex items-center justify-center">
             Submit

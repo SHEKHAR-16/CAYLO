@@ -45,8 +45,8 @@ export default function Restaurants() {
   }, [currentIndex]);
 
   return (
-   
-    <main className="w-full flex flex-col items-center overflow-x-hidden bg-white">
+    
+    <main className="w-full flex flex-col items-center bg-white">
 
       <style>{`
         @keyframes fillLine {
@@ -64,8 +64,8 @@ export default function Restaurants() {
           animation: fadeIn 0.4s ease-in-out;
         }
       `}</style>
-      
-      <section className="w-full flex flex-col items-center pb-[10px]">
+    
+      <section className="w-full flex flex-col items-center pb-[10px] min-h-[580px]">
         
         <div className="w-[1950px] max-w-full h-[80px] flex items-center justify-center mb-[10px]">
           <h1 className="font-['Agbalumo',_sans-serif] text-black text-[30px] tracking-wide">
@@ -141,15 +141,15 @@ export default function Restaurants() {
         </div>
       </section>
 
-      <section className="w-full bg-[#FFA700] flex flex-col items-center pt-[50px] pb-[60px] relative px-4">
+     
+      <section className="w-full bg-[#FFA700] flex flex-col items-center relative  pb-10px px-4 min-h-[575px]">
         
-        <h2 className="font-chewy text-white text-[40px] mb-[40px] text-center tracking-wide [text-shadow:0px_2px_4px_rgba(0,0,0,0.2)]">
+        <h2 className="relative  top-[30px] font-agbalumo text-white text-[33px] mb-[50px] text-center tracking-wide [text-shadow:0px_2px_4px_rgba(0,0,0,0.2)]">
           Check out Our Restaurants!
         </h2>
-
         
+      
         <div className="relative w-full max-w-[1250px] flex items-center justify-center h-[400px]">
-          
           
           <button onClick={prevSlide} className="absolute left-[10px] md:left-[20px] text-[#d68c00] hover:text-white text-[50px] z-[60] transition-colors cursor-pointer">
             <FaChevronLeft />
@@ -157,13 +157,11 @@ export default function Restaurants() {
 
           <div className="flex items-center justify-center">
             
-           
             <div className="relative w-[180px] h-[180px] border-[4px] border-white z-10 -mr-[40px] opacity-90 cursor-pointer overflow-hidden" onClick={() => setCurrentIndex(getIndex(-2))}>
               <div className="w-full h-full bg-black/50 absolute top-0 left-0 z-10"></div> 
               <img src={galleryImages[getIndex(-2)]} key={galleryImages[getIndex(-2)]} alt="Caylos" className="w-full h-full object-cover z-0 fade-image" />
             </div>
 
-            
             <div className="relative w-[250px] h-[250px] border-[4px] border-white z-20 -mr-[40px] opacity-95 cursor-pointer overflow-hidden" onClick={() => setCurrentIndex(getIndex(-1))}>
               <div className="w-full h-full bg-black/30 absolute top-0 left-0 z-10"></div> 
               <img src={galleryImages[getIndex(-1)]} key={galleryImages[getIndex(-1)]} alt="Caylos" className="w-full h-full object-cover z-0 fade-image" />
@@ -172,13 +170,11 @@ export default function Restaurants() {
             <div className="relative w-[350px] h-[350px] border-[5px] border-white z-30 shadow-[0_0_20px_rgba(0,0,0,0.3)] bg-white overflow-hidden">
               <img src={galleryImages[getIndex(0)]} key={galleryImages[getIndex(0)]} alt="Caylos Center" className="w-full h-full object-cover z-0 fade-image" />
             </div>
-
-           
+            
             <div className="relative w-[250px] h-[250px] border-[4px] border-white z-20 -ml-[40px] opacity-95 cursor-pointer overflow-hidden" onClick={() => setCurrentIndex(getIndex(1))}>
               <div className="w-full h-full bg-black/30 absolute top-0 left-0 z-10"></div>
               <img src={galleryImages[getIndex(1)]} key={galleryImages[getIndex(1)]} alt="Caylos" className="w-full h-full object-cover z-0 fade-image" />
             </div>
-
             
             <div className="relative w-[180px] h-[180px] border-[4px] border-white z-10 -ml-[40px] opacity-90 cursor-pointer overflow-hidden" onClick={() => setCurrentIndex(getIndex(2))}>
               <div className="w-full h-full bg-black/50 absolute top-0 left-0 z-10"></div>
@@ -186,14 +182,12 @@ export default function Restaurants() {
             </div>
 
           </div>
-
-         
+          
           <button onClick={nextSlide} className="absolute right-[10px] md:right-[20px] text-[#d68c00] hover:text-white text-[50px] z-[60] transition-colors cursor-pointer">
             <FaChevronRight />
           </button>
 
         </div>
-        
         
         <div className="flex gap-[12px] mt-[30px] z-[60] relative">
           {galleryImages.map((_, idx) => (
@@ -206,7 +200,6 @@ export default function Restaurants() {
             />
           ))}
         </div>
-        
         
         <div className="w-full max-w-[1260px] h-[4px] bg-[#444444]/40 rounded-full mt-[20px] overflow-hidden">
           <div key={currentIndex} className="h-full bg-[#444444] progress-line-fill rounded-full"></div>

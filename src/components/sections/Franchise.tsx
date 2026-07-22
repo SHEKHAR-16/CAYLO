@@ -5,7 +5,7 @@ export default function Franchise() {
     
     <section className="w-full max-w-[1950px] mx-auto h-[487px] overflow-hidden relative flex items-center justify-center">
       
-      {/* Background Image */}
+      
       <Image 
         src="/franchise-bg.png" 
         alt="Franchise Background"
@@ -14,14 +14,13 @@ export default function Franchise() {
         quality={100}
       />
       
-      {/* 💡 REMOVED GRID. Changed to a flex container pushing items to the left (justify-start) */}
+      
       <div className="relative z-10 w-full max-w-[1725px] mx-auto px-4 md:px-0 flex justify-start items-stretch">
         
-        {/* THE DARK BOX (Parent Container with your exact padding) */}
-        {/* 💡 Notice we don't need a strict width here anymore. The paragraph inside will push it open! */}
+       
         <div className="bg-[#0a0a0a]/90 flex px-[25px] py-[50px]">
           
-          {/* THE CONTENT AREA */}
+          
           <div className="flex flex-col justify-center">
             
             <h2 className="font-agbalumo italic text-white text-[30px] font-normal mb-2 leading-tight">
@@ -32,7 +31,7 @@ export default function Franchise() {
               Franchise Opportunities Available
             </h2>
             
-            {/* 💡 YOUR MEASUREMENTS: Applied directly to the paragraph */}
+            
             <p className="w-full max-w-[933.25px] min-h-[48px] font-[-apple-system,_BlinkMacSystemFont,_sans-serif] text-gray-300 text-[16px] leading-[1.8] mb-8">
               Become a part of Caylo's, Norway's top burger and fried chicken brand. With our proven model and full support, you can bring our exceptional taste to your community. Join us today and start your journey to success with Caylo's!
             </p>
