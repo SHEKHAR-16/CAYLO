@@ -28,14 +28,14 @@ export default function Navbar() {
     <header className="w-full bg-[#960808] relative z-50">
       
     
-      <div className="max-w-[1140px] w-full mx-auto px-4 xl:px-0 flex items-center justify-between transition-all duration-300 min-h-[80px] py-[15px]">
+      <div className="max-w-[1140px] w-full mx-auto px-4 xl:px-0 flex items-center justify-between transition-all duration-300 min-h-[80px] py-[15.5px]">
         <div className="flex items-center gap-[170px]">
         
         <Link href={`/${lang}`} className="flex items-center">
           <Image
             src={logoImg}
             alt="Caylo's Logo"
-            className="w-[170px] h-auto object-contain"
+            className="w-[170px] h-auto object-contain -mt-[5px]"
             priority
             suppressHydrationWarning
           />
@@ -99,7 +99,7 @@ export default function Navbar() {
               <Link href={`/${lang}/franchise`} className="block px-4 py-2.5 hover:bg-gray-100 hover:text-[#FFAF00] transition-colors">
                 Franchise
               </Link>
-              <Link href={`/${lang}/contact`} className="block px-4 py-2.5 hover:bg-gray-100 hover:text-[#FFAF00] transition-colors">
+              <Link href={`/${lang}/contact-form`} className="block px-4 py-2.5 hover:bg-gray-100 hover:text-[#FFAF00] transition-colors">
                 Contact Us
               </Link>
             </div>
